@@ -221,14 +221,14 @@ button:hover {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-}
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  order: -1; /* puts it before other elements in flex */
 }
 
 /* Mobile menu styles */
