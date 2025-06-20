@@ -222,3 +222,36 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #800080;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  nav ul li {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav.show ul {
+    display: flex;
+  }
+}
