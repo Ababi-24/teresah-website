@@ -231,7 +231,7 @@ button:hover {
   order: -1; /* puts it before other elements in flex */
 }
 
-/* Mobile-Friendly Layout */
+/* Mobile-Friendly Hamburger Menu */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -240,13 +240,13 @@ button:hover {
 
   .menu-toggle {
     display: block;
-    font-size: 26px;
+    font-size: 28px;
     background: none;
     border: none;
     color: white;
+    margin-top: 10px;
+    margin-left: 0;
     cursor: pointer;
-    margin: 0.5em 0 0 0;
-    order: -1; /* show before nav in the header flex */
   }
 
   nav ul {
@@ -254,23 +254,21 @@ button:hover {
     flex-direction: column;
     background-color: #800080;
     width: 100%;
-    padding-left: 0;
-    margin: 0;
+    margin-top: 10px;
+    padding: 0;
   }
 
   nav ul li {
     width: 100%;
     text-align: left;
-    padding: 10px;
   }
 
   nav ul li a {
     display: block;
     width: 100%;
-    padding: 10px 20px;
-    text-align: left;
-    color: white;
+    padding: 12px 20px;
     text-decoration: none;
+    color: white;
   }
 
   nav.show ul {
@@ -279,8 +277,8 @@ button:hover {
 
   .about-img {
     float: none;
-    margin: 1em auto;
     display: block;
+    margin: 1em auto;
   }
 
   .section,
